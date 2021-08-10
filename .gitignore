@@ -61,7 +61,7 @@ typings/
 .next
 
 # dist files
-dist/
+#dist/
 
 .idea
 .DS_Store
