@@ -111,7 +111,7 @@ export function generateWrapperCode(
       func.relativePath
   );
   const labelsFormatted = typeof labels === 'object' ? JSON.stringify(labels) : labels;
-  const ignoredKeysFormatted = typeof payloadsToIgnore === 'object' ? JSON.stringify(payloadsToIgnore) : payloadsToIgnore;
+  const ignoredKeysFormatted = typeof payloadsToIgnore === 'object' ? JSON.stringify(payloadsToIgnore) : '';
 
   return WRAPPER_CODE({
     relativePath,
