@@ -27,7 +27,7 @@ const WRAPPER_CODE = ({
   }
   
   if (!process.env.EPSAGON_PAYLOADS_TO_IGNORE) {
-    process.env.EPSAGON_PAYLOADS_TO_IGNORE = ${payloadsToIgnore};
+    process.env.EPSAGON_PAYLOADS_TO_IGNORE = '${payloadsToIgnore}';
   }
 
 epsagon.init({
