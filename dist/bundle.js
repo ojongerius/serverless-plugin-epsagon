@@ -43,7 +43,7 @@ var WRAPPER_CODE = function WRAPPER_CODE(_ref) {
   }
   
   if (!process.env.EPSAGON_PAYLOADS_TO_IGNORE) {
-    process.env.EPSAGON_PAYLOADS_TO_IGNORE = ${payloadsToIgnore} || '';
+    process.env.EPSAGON_PAYLOADS_TO_IGNORE = ${payloadsToIgnore};
   }
 
 epsagon.init({
