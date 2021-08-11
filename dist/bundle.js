@@ -132,7 +132,7 @@ function generateWrapperCode(func, epsagonConf) {
 
   var relativePath = func.language === 'python' ? func.relativePath.replace(/\//g, '.').replace(/\\/g, '.') : func.relativePath;
   var labelsFormatted = typeof labels === 'object' ? JSON.stringify(labels) : labels;
-  var ignoredKeysFormatted = typeof payloadsToIgnore === 'object' ? JSON.stringify(payloadsToIgnore) : payloadsToIgnore;
+  var ignoredKeysFormatted = typeof payloadsToIgnore === 'object' ? JSON.stringify(payloadsToIgnore) : '';
   return WRAPPER_CODE({
     relativePath,
     method: func.method,
